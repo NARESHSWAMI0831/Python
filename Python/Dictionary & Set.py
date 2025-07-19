@@ -1,5 +1,5 @@
 # Dictionary
-
+#Basic
 
 info={
     "name":"alok",
@@ -80,6 +80,9 @@ print(set1.intersection(set2))
 
 # PRACTICE
 
+# 1
 word={"table":["a furniture","list of fact and figure"],
         "cat":"a small animal"}
 print(word)
+
+
