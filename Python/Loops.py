@@ -61,9 +61,11 @@ while z<len(i):
 
 # Break and Continue
 
-i=1
-while i<=5:
+i=0
+while i<=10:
+    if(i%2 ==0):
+       i+=1 
+       continue 
     print(i)
-    if(i==3):
-        break
     i+=1
+    
