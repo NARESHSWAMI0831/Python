@@ -7,6 +7,7 @@ def show(n):
     show(n-1)
 
 show(5)
-# try new yes
-A="hello"
-print(A)
+
+
+# todays tp
+print("smart")
