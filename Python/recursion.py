@@ -9,5 +9,4 @@ def show(n):
 show(5)
 
 
-# todays tp
-print("smart")
+# yes i can do it
