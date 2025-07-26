@@ -26,3 +26,17 @@ print("\nUpdated List:", languages)
 # Remove a language
 languages.remove("Java")
 print("After Removing Java:", languages)
+
+
+
+# Daily Python Practice - July 26
+
+# Writing to a file
+with open("my_notes.txt", "w") as file:
+    file.write("This is my first note written using Python.\n")
+    file.write("File handling is easy and useful!\n")
+
+# Reading from the same file
+with open("my_notes.txt", "r") as file:
+    content = file.read()
+    print("File Content:\n", content)
