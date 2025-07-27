@@ -9,34 +9,20 @@ def show(n):
 show(5)
 
 
-# Daily Python Practice - July 25
+# Daily Python Practice - July 27
 
-# A list of programming languages
-languages = ["Python", "Java", "C++", "JavaScript", "Go"]
+try:
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter another number: "))
+    result = num1 / num2
+    print("Result:", result)
 
-# Print each language with a number
-print("Programming Languages:")
-for i, lang in enumerate(languages, start=1):
-    print(f"{i}. {lang}")
+except ZeroDivisionError:
+    print("You can't divide by zero!")
 
-# Add a new language
-languages.append("Rust")
-print("\nUpdated List:", languages)
+except ValueError:
+    print("Please enter valid numbers only.")
 
-# Remove a language
-languages.remove("Java")
-print("After Removing Java:", languages)
+finally:
+    print("This block always runs, no matter what!")
 
-
-
-# Daily Python Practice - July 26
-
-# Writing to a file
-with open("my_notes.txt", "w") as file:
-    file.write("This is my first note written using Python.\n")
-    file.write("File handling is easy and useful!\n")
-
-# Reading from the same file
-with open("my_notes.txt", "r") as file:
-    content = file.read()
-    print("File Content:\n", content)
