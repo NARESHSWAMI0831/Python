@@ -8,21 +8,18 @@ def show(n):
 
 show(5)
 
+# Daily Python Practice - July 28
 
-# Daily Python Practice - July 27
+def is_palindrome(text):
+    cleaned = text.lower().replace(" ", "")
+    return cleaned == cleaned[::-1]
 
-try:
-    num1 = int(input("Enter a number: "))
-    num2 = int(input("Enter another number: "))
-    result = num1 / num2
-    print("Result:", result)
+# Sample tests
+words = ["Radar", "Python", "Madam", "Level", "Coding"]
 
-except ZeroDivisionError:
-    print("You can't divide by zero!")
-
-except ValueError:
-    print("Please enter valid numbers only.")
-
-finally:
-    print("This block always runs, no matter what!")
+for word in words:
+    if is_palindrome(word):
+        print(f"✅ '{word}' is a palindrome")
+    else:
+        print(f"❌ '{word}' is not a palindrome")
 
