@@ -8,18 +8,18 @@ def show(n):
 
 show(5)
 
-# Daily Python Practice - July 28
+# Daily Python Practice - July 29
 
-def is_palindrome(text):
-    cleaned = text.lower().replace(" ", "")
-    return cleaned == cleaned[::-1]
+def reverse_number(num):
+    reversed_num = 0
+    while num > 0:
+        digit = num % 10
+        reversed_num = (reversed_num * 10) + digit
+        num //= 10
+    return reversed_num
 
-# Sample tests
-words = ["Radar", "Python", "Madam", "Level", "Coding"]
-
-for word in words:
-    if is_palindrome(word):
-        print(f"✅ '{word}' is a palindrome")
-    else:
-        print(f"❌ '{word}' is not a palindrome")
+# Sample test
+number = 12345
+print(f"Original Number: {number}")
+print(f"Reversed Number: {reverse_number(number)}")
 
