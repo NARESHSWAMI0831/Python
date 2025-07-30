@@ -8,18 +8,21 @@ def show(n):
 
 show(5)
 
-# Daily Python Practice - July 29
+# Daily Python Practice - July 30
 
-def reverse_number(num):
-    reversed_num = 0
-    while num > 0:
-        digit = num % 10
-        reversed_num = (reversed_num * 10) + digit
-        num //= 10
-    return reversed_num
+class Student:
+    def __init__(self, name, roll_no):
+        self.name = name
+        self.roll_no = roll_no
 
-# Sample test
-number = 12345
-print(f"Original Number: {number}")
-print(f"Reversed Number: {reverse_number(number)}")
+    def display(self):
+        print(f"Name: {self.name}")
+        print(f"Roll Number: {self.roll_no}")
 
+# Creating objects
+student1 = Student("Naresh", 101)
+student2 = Student("Swami", 102)
+
+# Displaying info
+student1.display()
+student2.display()
