@@ -8,21 +8,27 @@ def show(n):
 
 show(5)
 
-# Daily Python Practice - July 30
+# Daily Python Practice - July 31
 
-class Student:
-    def __init__(self, name, roll_no):
+# Base class
+class Person:
+    def __init__(self, name):
         self.name = name
+
+    def show(self):
+        print(f"Name: {self.name}")
+
+# Derived class
+class Student(Person):
+    def __init__(self, name, roll_no):
+        super().__init__(name)
         self.roll_no = roll_no
 
-    def display(self):
-        print(f"Name: {self.name}")
+    def show_details(self):
+        self.show()
         print(f"Roll Number: {self.roll_no}")
 
-# Creating objects
-student1 = Student("Naresh", 101)
-student2 = Student("Swami", 102)
+# Creating an object of Student
+s1 = Student("Naresh", 101)
+s1.show_details()
 
-# Displaying info
-student1.display()
-student2.display()
