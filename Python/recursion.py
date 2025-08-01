@@ -9,25 +9,34 @@ def show(n):
 show(5)
 
 
-# Daily Python Practice - August 1
-# Linear Search: Check if an element exists in a list
 
-def linear_search(arr, target):
-    for i in range(len(arr)):
-        if arr[i] == target:
-            return i  # Return the index where the element is found
-    return -1  # Return -1 if not found
+# Daily Python Practice - August 2
+# Binary Search: Works only on sorted lists
 
-# Sample list and target
-numbers = [10, 20, 30, 40, 50]
-target = 30
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
 
-# Function call
-result = linear_search(numbers, target)
+    while low <= high:
+        mid = (low + high) // 2
 
-# Output
+        if arr[mid] == target:
+            return mid  # Target found
+        elif arr[mid] < target:
+            low = mid + 1  # Search in right half
+        else:
+            high = mid - 1  # Search in left half
+
+    return -1  # Target not found
+
+# Sorted list and target value
+numbers = [5, 10, 15, 20, 25, 30, 35]
+target = 25
+
+# Search and output
+result = binary_search(numbers, target)
+
 if result != -1:
     print(f"{target} found at index {result}")
 else:
     print(f"{target} not found in the list")
-
