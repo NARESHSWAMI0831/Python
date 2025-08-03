@@ -9,34 +9,21 @@ def show(n):
 show(5)
 
 
+# Daily Python Practice - August 3
+# Bubble Sort: Repeatedly swap adjacent elements if they are in the wrong order
 
-# Daily Python Practice - August 2
-# Binary Search: Works only on sorted lists
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        # Last i elements are already sorted
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                # Swap if the element found is greater than the next element
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
-def binary_search(arr, target):
-    low = 0
-    high = len(arr) - 1
+# Sample list
+numbers = [64, 34, 25, 12, 22, 11, 90]
 
-    while low <= high:
-        mid = (low + high) // 2
-
-        if arr[mid] == target:
-            return mid  # Target found
-        elif arr[mid] < target:
-            low = mid + 1  # Search in right half
-        else:
-            high = mid - 1  # Search in left half
-
-    return -1  # Target not found
-
-# Sorted list and target value
-numbers = [5, 10, 15, 20, 25, 30, 35]
-target = 25
-
-# Search and output
-result = binary_search(numbers, target)
-
-if result != -1:
-    print(f"{target} found at index {result}")
-else:
-    print(f"{target} not found in the list")
+print("Before sorting:", numbers)
+bubble_sort(numbers)
+print("After sorting:", numbers)
