@@ -29,3 +29,27 @@ numbers = [12, 11, 13, 5, 6]
 print("Before sorting:", numbers)
 insertion_sort(numbers)
 print("After sorting:", numbers)
+
+
+# Daily Python Practice - August 6
+# Linear Search with user input
+
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i  # Found at index
+    return -1  # Not found
+
+# Taking user input
+numbers = input("Enter numbers separated by spaces: ").split()
+numbers = [int(num) for num in numbers]
+
+target = int(input("Enter number to search: "))
+
+# Search and print result
+result = linear_search(numbers, target)
+if result != -1:
+    print(f"Number found at index {result}")
+else:
+    print("Number not found in the list.")
+
