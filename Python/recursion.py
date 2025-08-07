@@ -53,3 +53,33 @@ if result != -1:
 else:
     print("Number not found in the list.")
 
+# Daily Python Practice - August 7
+# Binary Search (Iterative) - List must be sorted
+
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+            
+    return -1  # Not found
+
+# Input from user
+numbers = input("Enter sorted numbers separated by spaces: ").split()
+numbers = [int(num) for num in numbers]
+
+target = int(input("Enter number to search: "))
+
+# Search and print result
+result = binary_search(numbers, target)
+if result != -1:
+    print(f"Number found at index {result}")
+else:
+    print("Number not found in the list.")
