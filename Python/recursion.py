@@ -83,3 +83,18 @@ if result != -1:
     print(f"Number found at index {result}")
 else:
     print("Number not found in the list.")
+
+# Daily Python Practice - August 11
+# Check if a string is a palindrome
+
+def is_palindrome(text):
+    cleaned = ''.join(char.lower() for char in text if char.isalnum())  # remove spaces, punctuation
+    return cleaned == cleaned[::-1]
+
+# Input from user
+user_input = input("Enter text to check if it's a palindrome: ")
+
+if is_palindrome(user_input):
+    print("✅ Yes, it's a palindrome!")
+else:
+    print("❌ No, it's not a palindrome.")
