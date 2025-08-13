@@ -1,4 +1,4 @@
-//Simple program of c++ of printing age
+//Simple program of c++ of scaning and printing age
 #include <iostream>
 using namespace std;
 
