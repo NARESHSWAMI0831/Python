@@ -160,3 +160,31 @@ if __name__ == "__main__":
 
 
 
+# Daily Python Practice - August 14
+# Find all prime numbers in a user-given range and save them to a file.
+
+def is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    if n in (2, 3):
+        return True
+    if n % 2 == 0:
+        return False
+    i = 3
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 2
+    return True
+
+start = int(input("Start of range: "))
+end = int(input("End of range: "))
+
+primes = [x for x in range(start, end + 1) if is_prime(x)]
+print("Primes:", primes)
+
+filename = f"primes_{start}_{end}.txt"
+with open(filename, "w") as f:
+    f.write(", ".join(map(str, primes)))
+
+print(f"✅ Saved {len(primes)} primes to {filename}")
