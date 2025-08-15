@@ -188,3 +188,20 @@ with open(filename, "w") as f:
     f.write(", ".join(map(str, primes)))
 
 print(f"✅ Saved {len(primes)} primes to {filename}")
+
+
+# Daily Python Practice - August 15
+# Reverse a string using slicing and loop methods.
+
+text = input("Enter a string: ")
+
+# Method 1: Slicing
+reversed_text_slice = text[::-1]
+print("Reversed (slicing):", reversed_text_slice)
+
+# Method 2: Loop
+reversed_text_loop = ""
+for char in text:
+    reversed_text_loop = char + reversed_text_loop
+print("Reversed (loop):", reversed_text_loop)
+
