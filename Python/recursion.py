@@ -218,3 +218,21 @@ if num == sum:
     print(num, "is an Armstrong number")
 else:
     print(num, "is not an Armstrong number")
+
+
+
+
+# Program: Palindrome Checker
+# Date: August 17, 2025
+
+def is_palindrome(s):
+    # Remove spaces and convert to lowercase
+    s = s.replace(" ", "").lower()
+    return s == s[::-1]
+
+# Example usage
+text = input("Enter a word or phrase: ")
+if is_palindrome(text):
+    print("✅ It's a palindrome!")
+else:
+    print("❌ Not a palindrome.")
