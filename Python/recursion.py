@@ -277,3 +277,21 @@ def fibonacci(n):
 # Example usage
 terms = int(input("Enter number of terms: "))
 print("Fibonacci series:", fibonacci(terms))
+
+
+# Daily Code: August 20
+# Program to find the largest element in a list
+
+def find_largest(numbers):
+    if not numbers:
+        return None
+    largest = numbers[0]
+    for num in numbers:
+        if num > largest:
+            largest = num
+    return largest
+
+# Example usage
+nums = [12, 45, 23, 67, 89, 34]
+print("Numbers:", nums)
+print("Largest number is:", find_largest(nums))
