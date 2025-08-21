@@ -318,3 +318,26 @@ n_terms = 10
 print(f"Fibonacci sequence with {n_terms} terms:")
 print(fibonacci(n_terms))
 
+# Daily Code: August 22
+# Program to find prime numbers in a given range
+
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def prime_in_range(start, end):
+    primes = []
+    for num in range(start, end + 1):
+        if is_prime(num):
+            primes.append(num)
+    return primes
+
+# Example usage
+start = 10
+end = 50
+print(f"Prime numbers between {start} and {end}:")
+print(prime_in_range(start, end))
