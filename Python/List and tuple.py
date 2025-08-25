@@ -32,3 +32,22 @@ print(tup[0:2])
 #tuple methods
 print(tup.index(2))
 print(tup.count(2))
+
+
+
+
+
+# Daily Code: August 25, 2025
+# Program to find the largest number in a list
+
+def find_largest(numbers):
+    largest = numbers[0]
+    for num in numbers:
+        if num > largest:
+            largest = num
+    return largest
+
+# Example usage
+nums = [12, 45, 78, 34, 89, 23]
+print("List:", nums)
+print("Largest number in the list:", find_largest(nums))
