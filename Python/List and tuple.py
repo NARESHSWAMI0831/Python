@@ -83,3 +83,18 @@ def factorial(n):
 # Example usage
 num = int(input("Enter a number: "))
 print(f"Factorial of {num} is {factorial(num)}")
+
+
+
+
+# Daily Code: August 27
+# Program to find factorial using recursion
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+# Example usage
+num = int(input("Enter a number: "))
+print(f"Factorial of {num} is {factorial(num)}")
