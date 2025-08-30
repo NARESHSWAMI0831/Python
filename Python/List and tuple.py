@@ -120,3 +120,18 @@ if is_prime(num):
     print(f"{num} is a Prime number")
 else:
     print(f"{num} is NOT a Prime number")
+
+
+
+# Daily Code: August 30
+# Program to find factorial of a number using loop
+
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+# Example usage
+num = int(input("Enter a number: "))
+print(f"Factorial of {num} is {factorial(num)}")
