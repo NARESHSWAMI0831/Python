@@ -135,3 +135,24 @@ def factorial(n):
 # Example usage
 num = int(input("Enter a number: "))
 print(f"Factorial of {num} is {factorial(num)}")
+
+
+
+
+# Daily Practice: September 6, 2025
+# Program to check if a number is Prime
+
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+# Example usage
+number = int(input("Enter a number: "))
+if is_prime(number):
+    print(f"{number} is a Prime number ✅")
+else:
+    print(f"{number} is NOT a Prime number ❌")
