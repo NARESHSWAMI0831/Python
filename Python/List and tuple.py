@@ -21,7 +21,7 @@ print(table)
 
 
 
-#Tuple
+# tuple
 
 tup=(2,1,5,9)
 print(tup[2])
