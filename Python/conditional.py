@@ -128,6 +128,20 @@ if(num1 % 7 ==0):
 else:
     print("not a multiple")
 
+# Daily Practice: September 11, 2025
+# Program to check Fibonacci series up to n terms
+
+def fibonacci(n):
+    a, b = 0, 1
+    series = []
+    for _ in range(n):
+        series.append(a)
+        a, b = b, a + b
+    return series
+
+# Example usage
+terms = int(input("Enter number of terms: "))
+print("Fibonacci Series:", fibonacci(terms))
 
 
 
