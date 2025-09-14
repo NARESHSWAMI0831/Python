@@ -39,3 +39,5 @@ def length(list):
     print(len(list))
 
 length(city)
+
+# output
