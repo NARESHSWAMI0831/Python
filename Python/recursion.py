@@ -380,3 +380,6 @@ if is_prime(num):
     print(num, "is a Prime number.")
 else:
     print(num, "is NOT a Prime number.")
+
+
+# output
