@@ -143,5 +143,3 @@ def fibonacci(n):
 terms = int(input("Enter number of terms: "))
 print("Fibonacci Series:", fibonacci(terms))
 
-# output
-# done
