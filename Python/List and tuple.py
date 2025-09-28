@@ -157,4 +157,3 @@ if is_prime(number):
 else:
     print(f"{number} is NOT a Prime number ❌")
 
-# 
