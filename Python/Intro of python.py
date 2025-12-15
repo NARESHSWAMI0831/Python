@@ -92,3 +92,5 @@ print(average)"""
 a=int(input("enter your number 1 :"))
 b=int(input("enter your number 2 :"))
 print(a>=b)
+
+# 
