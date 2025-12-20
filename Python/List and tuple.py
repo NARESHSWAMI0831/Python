@@ -6,7 +6,6 @@ print(student)
 
 print(marks[:1])  #slicing
 
-# 
 #List Methods
 
 table=[1,3,4,5,3,8]
