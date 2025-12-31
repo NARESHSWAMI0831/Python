@@ -1,7 +1,7 @@
 # Dictionary
 #Basic
  
-
+# 
 info={
     "name":"alok",
     "suhbject": {
