@@ -11,7 +11,7 @@ Z=10.51 #Float
 W="true false" #Bollean
 V= "none" #none
 #These are the data type in pyhton
-
+# 
 #Operator
 # 
 a=5
