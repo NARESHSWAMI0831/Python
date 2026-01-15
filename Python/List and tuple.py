@@ -19,7 +19,7 @@ table.pop(0)
 print(table)
 
 
-# 
+
 # Tuple
 
 tup=(2,1,5,9)
