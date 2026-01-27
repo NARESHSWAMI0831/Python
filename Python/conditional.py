@@ -1,7 +1,7 @@
 #STRINGS
 
 """Basic operations"""
-# 
+
 # Concatenation
 
 """firstname=input("enter your first name :")
