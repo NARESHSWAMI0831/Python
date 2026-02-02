@@ -6,7 +6,7 @@ def calsum(a,b):
 
 calsum(4,6)
 
-# 
+
 def tsum(a,b):
     return a+b
 
