@@ -13,7 +13,7 @@ V= "none" #none
 #These are the data type in pyhton
  
 #Operator
-# 
+
 a=5
 b=2
 print(a+b)
