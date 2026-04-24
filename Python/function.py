@@ -5,8 +5,8 @@ def calsum(a,b):
     return sum
 
 calsum(4,6)
-#
-# 
+
+
 def tsum(a,b):
     return a+b
 
