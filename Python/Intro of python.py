@@ -3,7 +3,7 @@ B=20
 C=A+B
 print(C)
 # A,B,C are the variable
-
+//
 # Variable is a name assign to a memory 
 X=10 # integer
 Y="10,yes" #string
