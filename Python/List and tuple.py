@@ -3,7 +3,7 @@ print(marks)
 student=["alok",67,"delhi"]
 student[0]="yash"
 print(student)
-# 
+
 print(marks[:1])  #slicing
 
 #List Methods
