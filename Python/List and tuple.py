@@ -5,7 +5,7 @@ student[0]="yash"
 print(student)
 
 print(marks[:1])  #slicing
-# 
+#theee 
 #List Methods
 
 table=[1,3,4,5,3,8]
