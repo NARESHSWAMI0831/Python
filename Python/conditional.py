@@ -20,7 +20,7 @@ print(len(firstname)) #tell the length
 print(firstname[0])"""
 
 #Slicing
-
+#
 """print(firstname[:-1])"""
 
 #Basic function of str
