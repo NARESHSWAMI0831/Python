@@ -37,7 +37,7 @@ a="i am studing python in my self study"
 
 """print(a.count("t"))"""     #count the occurance
 
-
+#
 """ Question Practice"""
 
 #1 WAP to input user's first name & print its length
