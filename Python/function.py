@@ -12,7 +12,7 @@ def tsum(a,b):
 
 a=tsum(7,8)
 print(a)
-# 
+
 # avg of three number
 
 def tavg(a,b,c,d):
