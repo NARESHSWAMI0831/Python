@@ -23,7 +23,6 @@ def tavg(a,b,c,d):
 
 tavg(34,36,78,31)
 
-# 
 
 # types of function
 
