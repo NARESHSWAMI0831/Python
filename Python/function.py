@@ -22,7 +22,7 @@ def tavg(a,b,c,d):
     return avg
 
 tavg(34,36,78,31)
-
+# 
 
 # types of function
 
