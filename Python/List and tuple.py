@@ -133,7 +133,7 @@ num = int(input("Enter a number: "))
 print(f"Factorial of {num} is {factorial(num)}")
 
 
-
+# 
 
 # Daily Practice: September 6, 2025
 # Program to check if a number is Prime
