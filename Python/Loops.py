@@ -6,10 +6,10 @@
 # while i <=5 :
 #     print(" I can do it",i)
 #     i += 1
-#
+
 # print(i)
-# 
-# 
+
+
 # practice while loop
 
 # 1 print 1 to 1000
