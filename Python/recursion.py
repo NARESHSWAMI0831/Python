@@ -7,7 +7,7 @@ def show(n):
     show(n-1)
 
 show(5)
-
+# 
 
 # Daily Python Practice - August 5
 # Insertion Sort: Build the sorted list one item at a time
