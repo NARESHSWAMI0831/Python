@@ -9,7 +9,7 @@
 
 # print(i)
 
-# 
+
 # practice while loop
 
 # 1 print 1 to 1000
