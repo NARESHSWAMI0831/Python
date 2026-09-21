@@ -18,7 +18,7 @@ table.remove(3)
 table.pop(0)
 print(table)
 
-# 
+
 
 # Tuple
 
