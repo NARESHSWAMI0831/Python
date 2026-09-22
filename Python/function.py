@@ -14,7 +14,7 @@ a=tsum(7,8)
 print(a)
 
 # avg of three number
-
+# 
 def tavg(a,b,c,d):
     sum=a+b+c+d
     avg=sum/4
