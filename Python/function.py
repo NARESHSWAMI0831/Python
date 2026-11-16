@@ -29,7 +29,7 @@ tavg(34,36,78,31)
 # len()
 # type()
 # user define
-
+# 
 #practice
 city=["delhi","goa","mumbai"]
 
